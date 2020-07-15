@@ -1,0 +1,72 @@
+@import '~antd/es/style/themes/default.less';
+
+html,
+body,
+#root {
+  height: 100%;
+}
+
+.colorWeak {
+  filter: invert(80%);
+}
+
+.ant-layout {
+  min-height: 100vh;
+}
+
+.selected-table-row {
+  background-color: #cbe6ff;
+}
+
+.myModal{
+  .ant-modal-header {
+    padding: 6px 16px;
+    background: linear-gradient(180deg, rgba(24, 160, 255, 1) 0%, rgba(34, 62, 217, 1) 100%);
+  }
+  .ant-modal-close-x {
+    height: 30px;
+    line-height: 31px;
+  }
+  .ant-modal-body {
+    padding: 6px;
+    .ant-card-bordered{
+      border: 1px solid #e8e8e8;
+      .ant-card-body {
+        padding: 6px;
+    }
+    }
+  }
+}
+
+
+canvas {
+  display: block;
+}
+
+body {
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+@media (max-width: @screen-xs) {
+  .ant-table {
+    width: 100%;
+    overflow-x: auto;
+    &-thead > tr,
+    &-tbody > tr {
+      > th,
+      > td {
+        white-space: pre;
+        > span {
+          display: block;
+        }
+      }
+    }
+  }
+}
